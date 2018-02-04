@@ -26,3 +26,25 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+/* Changes added to create-react-app output and reactdnd-tutorial by ZH */
+/* ============================================================================== */
+.App{
+  background-color: #222;
+  padding-bottom: 6em;
+}
+
+.App-header{
+  display: flex;
+    align-items: center;
+  height: 0%;
+}
+
+/* without a specific height and width, the board and squares will look collapsed and non-existent */
+.App-main{
+  border: solid #fff 2px;
+  height: 400px;
+  margin: 2em auto;
+  width: 400px;
+}

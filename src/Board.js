@@ -5,29 +5,41 @@ import Knight from './Knight';
 
 
 class Board extends Component{
-  renderSquare(x,y){
+  renderSquare(i){
+    const x = i % 8;
+    const y = Math.floor(i / 8);
+
     const black = (x + y) % 2 === 1;
 
     const [ knightX, knightY ] = this.props.knightPosition;
     const piece = (x === knightX && y === knightY) ? <Knight /> : null;
 
     return(
-      <Square black={ black }>
-        { piece }
-      </Square>
+      <div key={i} style={{
+        height: '12.5%',
+        width: '12.5%'
+      }}>
+        <Square black={ black }>
+          { piece }
+        </Square>
+      </div>
     )
   }
 
 
   render(){
+    const squares = [];
+    for(let i = 0; i < 64; i++){
+      squares.push(this.renderSquare(i))
+    }
     return(
       <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
         height: '100%',
         width: '100%'
       }}>
-        { this.renderSquare(0,0) }
-        { this.renderSquare(1,0) }
-        { this.renderSquare(2,0) }
+        { squares }
       </div>
     )
   }

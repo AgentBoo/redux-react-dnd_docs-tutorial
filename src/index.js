@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+import { observe } from './Game'
+
+observe(function(knightPosition){
+  ReactDOM.render(
+    <App knightPosition={ knightPosition }/>,
+    document.getElementById('root')
+  );
+})
+
 
 registerServiceWorker();

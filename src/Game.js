@@ -1,10 +1,14 @@
+// we want to keep the current knightPosition in some kind of state storage
+// and have ways to change it without setting up Flux or Redux
+// moveKnight function will directly modify the internal state
+
+
 let knightPosition = [1,7]
 let observer = null;
 
 function emitChange(){
   observer(knightPosition)
 }
-
 
 
 export function observe(receive){
@@ -18,14 +22,12 @@ export function observe(receive){
 
   observer = receive;
   emitChange()
-}
-
-
+};
 
 export function moveKnight(toX, toY){
   knightPosition = [toX, toY];
   emitChange()
-}
+};
 
 export function canMoveKnight(toX, toY){
   const [x, y] = knightPosition;
@@ -36,5 +38,4 @@ export function canMoveKnight(toX, toY){
     (Math.abs(dx) === 2 && Math.abs(dy) === 1) ||
     (Math.abs(dx) === 1 && Math.abs(dy) === 2)
   )
-
-}
+};

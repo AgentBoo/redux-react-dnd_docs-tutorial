@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-
 class Square extends Component{
   render(){
     const { black } = this.props;
@@ -16,7 +15,7 @@ class Square extends Component{
         height: '100%',
         width: '100%'
       }}>
-        {this.props.children}
+        { this.props.children }
       </div>
     )
   }

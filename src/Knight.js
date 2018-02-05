@@ -4,7 +4,6 @@ import { ItemTypes } from './constants';
 import { DragSource } from 'react-dnd';
 
 
-
 class Knight extends Component{
   render(){
     const { connectDragSource, isDragging } = this.props;
@@ -12,13 +11,13 @@ class Knight extends Component{
     return connectDragSource(
       <div style={{
         opacity: isDragging ? 0.5 : 1,
-        fontSize: '2em',
+        fontSize: '2.3em',
         fontWeight: 'bold',
         cursor: 'move'
       }}>
         <span> ♘ </span>
       </div>
-    )
+    );
   }
 };
 
@@ -41,6 +40,7 @@ function collect(connect, monitor){
     isDragging         : monitor.isDragging()
   }
 };
+
 
 Knight = DragSource(ItemTypes.KNIGHT, knightSource, collect)(Knight);
 export default Knight;

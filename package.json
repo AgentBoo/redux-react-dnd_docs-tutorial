@@ -19,5 +19,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://agentboo.github.io/gh-pg-react/redux-reactdnd-test"
+  "homepage": "https://agentboo.github.io/redux-reactdnd-test"
 }

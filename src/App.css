@@ -49,3 +49,12 @@
   margin: 2em auto;
   width: 400px;
 }
+
+.App-link{
+  color: #61DAFB;
+  text-decoration: none;
+}
+.App-link:hover{
+  color: #33FA6F;
+  transition: 0.3s linear;
+}

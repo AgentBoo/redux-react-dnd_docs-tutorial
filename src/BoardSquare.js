@@ -38,8 +38,8 @@ class BoardSquare extends Component{
         </Square>
 
         {isOver && !canDrop && this.renderOverlay('red')}
-        {!isOver && canDrop && this.renderOverlay('#00e5ff')}
-        {isOver && canDrop && this.renderOverlay('#b2ff00')}
+        {!isOver && canDrop && this.renderOverlay('#61D9FB')}
+        {isOver && canDrop && this.renderOverlay('#33FA6F')}
       </div>
     )
   }

@@ -19,7 +19,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React DnD and Redux example </h1>
+          <h1 className="App-title">Welcome to React DnD and Redux
+            <a className="App-link" href="https://github.com/AgentBoo/redux-reactDnD-docs-tutorial"> example </a>
+          </h1>
         </header>
 
         <Provider store={ store }>

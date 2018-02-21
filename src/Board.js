@@ -65,9 +65,10 @@ Board.propTypes = {
 };
 
 
+
 // alternatively
-// const mapStateToProps = state => state;
-const mapStateToProps = function(state){ return state };
+// const mapStateToProps = function(state){ return state };
+const mapStateToProps = state => state;
 
 Board = DragDropContext(HTML5Backend)(Board);
 // https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options

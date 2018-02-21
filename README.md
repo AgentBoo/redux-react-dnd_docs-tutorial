@@ -1,12 +1,14 @@
 # Example of hooking up React DnD with Redux
+
 This project is bootstrapped with
 [Create React App](https://github.com/facebookincubator/create-react-app).,
 and follows the instructions of
 [ReactDnD tutorial](http://react-dnd.github.io/react-dnd/docs-tutorial.html).
+Deployment follows [create-react-app gh-pages deployment procedure](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#github-pages)
 
 
 Dependencies
-  * npm i -S react-dnd react-dnd-html5-backend react-redux  
+  * react-dnd, react-dnd-html5-backend, react-redux, gh-pages  
 
 
 Deviations from the ReactDnD tutorial:

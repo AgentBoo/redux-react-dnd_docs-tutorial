@@ -1,4 +1,5 @@
 # Example of hooking up React DnD with Redux
+[Demo](https://agentboo.github.io/redux-react-dnd_docs-tutorial)
 
 This project is bootstrapped with
 [Create React App](https://github.com/facebookincubator/create-react-app).,

@@ -2,7 +2,7 @@
   "name": "redux-reactdnd-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://agentboo.github.io/redux-reactDnD-docs-tutorial",
+  "homepage": "https://agentboo.github.io/redux-react-dnd_docs-tutorial",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
